@@ -5,9 +5,11 @@ Hi! I'm Kaitlyn Harper, a second year MSc student in the School of Population an
 
 _Other things about me:_
 - I study molecular epidemiology and my thesis is on improving intestinal health of women and children in developing countries
-- I'm originally from Portland, Oregon, and I'm pretty obsessed with the fact that Canadians put seemingly unnecessary u's in words
+- I'm originally from Portland, Oregon, and I'm pretty obsessed with the fact that Canadians put seemingly unnecessary u's in words:
     + My favo(u)rite colo(u)r is purple
+    + My neighbo(u)r's name is George
 - Actual footage of me when I see bunnies at Jericho Beach:
+
 ![ ](https://imgs.xkcd.com/comics/bun_alert.png)
 
 ### Important things
