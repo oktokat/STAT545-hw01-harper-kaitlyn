@@ -8,7 +8,7 @@ _Other things about me:_
 - I'm originally from Portland, Oregon, and I'm pretty obsessed with the fact that Canadians put seemingly unnecessary u's in words:
     + My favo(u)rite colo(u)r is purple
     + My neighbo(u)r's name is George
-- Actual footage of me when I see bunnies at Jericho Beach:
+- Actual footage of me when I see bunnies at Jericho Beach (note: I'm the one in the hat):
 
 ![ ](https://imgs.xkcd.com/comics/bun_alert.png)
 
