@@ -58,10 +58,27 @@ unique(gapminder$continent)
 Huh, looks like North and South America are lumped into one, and Antarctica is missing. 
 
 I'm pretty sure we're going to get to plotting in the next hw assignment, so let's just explore some of the simple stats for this data set. 
+<div class = "color">
+```{r summary_stats, echo=TRUE}
 
+summary(gapminder)
 
+```
+</div>
+So it seems like we can glean a few things from this summary. This looks like a longitudinal data set from `r min(gapminder$year)` to `r max(gapminder$year)`, with `r length(which(gapminder$country == "Afghanistan"))` observations from most countries. 
 
+Okay fineeee, we'll do one plot just for good measure! 
+<div class = "color">
+```{r plot1, echo=TRUE}
 
+cont_LE = gapminder %>% 
+  group_by(continent) %>% 
+  summarise(avgLifeExp = mean(lifeExp))
+  
+plot(cont_LE, barplot(cont_LE$avgLifeExp))
+
+```
+</div>
 
 
 
