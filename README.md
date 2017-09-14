@@ -15,6 +15,8 @@ _Other things about me:_
 ### Important things
 I edited this README file locally, then committed and pushed it to github! I've had a tiny bit of experience on github and the computer gods smiled upon me this morning, so I didn't have any issues getting it into my repo on github :)
 
+One problem I did find interesting: I tried to use colour for my Rmd chunks (I just looked it up online and found some code), and it worked when I was knitting to html. Howeverm when I changed the output to a github_document, the colour stopped showing up. This is probably due to the fact that I was using html code to create the colour, which seems obvious now that I think about it, but for some reason I didn't expect it to stop working for the github doc. That said, if you have an easy solution for making colourful chunks in the output doc (because colour = fun!), please let me know :smiley:
+
 ### Files included in this repo:
 - Wanna see my markdown handiwork? [HW1 Rmd](https://github.com/oktokat/STAT545-hw01-harper-kaitlyn/blob/master/hw01_gapminder.Rmd)
 - Or how about a prettier version? [HW1 md](https://github.com/oktokat/STAT545-hw01-harper-kaitlyn/blob/master/hw01_gapminder.md)
