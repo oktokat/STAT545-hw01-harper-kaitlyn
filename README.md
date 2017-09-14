@@ -1,7 +1,7 @@
 ## STAT545-hw01-harper-kaitlyn
 
 ### Introduction
-Hi! I'm Kaitlyn Harper, a second year MSc student in the School of Population and Public Health. Yes, yes, I realize my github name is oktokat (:octocat:), which is (obviously) not my real name. I created my username a couple years ago when I was just starting to mess around in github. It's a little inconvenient to change the name now... and let's be honest, I'm a little emotionally attached.
+Hi! I'm Kaitlyn Harper, a second year MSc student in the School of Population and Public Health. Yes, yes, my github name is oktokat (:octocat:), which is (obviously) not my real name. I created my username a couple years ago when I was just starting to mess around in github. It's a little inconvenient to change the name now... and let's be honest, I'm a little emotionally attached.
 
 _Other things about me:_
 - I study molecular epidemiology and my thesis is on improving intestinal health of women and children in developing countries
