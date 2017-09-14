@@ -9,3 +9,14 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+This is a sentence.
+
+```{r New_Code, echo=TRUE}
+### This is code. 
+
+x = 1 
+y = 2
+
+```
+
+1 + 2 = `r x+y`! <-- I wrote this using my chunk of code! :smiley:
