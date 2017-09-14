@@ -67,3 +67,5 @@ ggplot(cont_LE, aes(continent, avgLifeExp)) +
   ggtitle("An obnoxiously colorful graph showing the aggregate average life expectancy of \nall people on different continents from 1952-2007")
 
 ```
+
+Until next time, fRiends! 

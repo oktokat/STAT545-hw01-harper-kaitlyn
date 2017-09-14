@@ -117,3 +117,5 @@ ggplot(cont_LE, aes(continent, avgLifeExp)) +
 ```
 
 ![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/plot1-1.png)
+
+Until next time, fRiends!
