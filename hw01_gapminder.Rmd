@@ -1,0 +1,10 @@
+---
+title: "Gapminder!"
+author: "Kaitlyn Harper"
+date: "September 14, 2017"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
