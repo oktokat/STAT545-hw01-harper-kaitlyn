@@ -16,9 +16,9 @@ _Other things about me:_
 I edited this README file locally, then committed and pushed it to github! I've had a tiny bit of experience on github and the computer gods smiled upon me this morning, so I didn't have any issues getting it into my repo on github :)
 
 ### Files included in this repo:
-- Wanna see my markdown handiwork? (HW1 Rmd)[https://github.com/oktokat/STAT545-hw01-harper-kaitlyn/blob/master/hw01_gapminder.Rmd]
-- Or how about a prettier version? (HW1 md)[https://github.com/oktokat/STAT545-hw01-harper-kaitlyn/blob/master/hw01_gapminder.md]
-- Here's the barplot on its own! (Life expectancy barplot)[https://github.com/oktokat/STAT545-hw01-harper-kaitlyn/blob/master/hw01_gapminder_files/figure-html/plot1-1.png]
+- Wanna see my markdown handiwork? [HW1 Rmd](https://github.com/oktokat/STAT545-hw01-harper-kaitlyn/blob/master/hw01_gapminder.Rmd)
+- Or how about a prettier version? [HW1 md](https://github.com/oktokat/STAT545-hw01-harper-kaitlyn/blob/master/hw01_gapminder.md)
+- Here's the barplot on its own! [Life expectancy barplot](https://github.com/oktokat/STAT545-hw01-harper-kaitlyn/blob/master/hw01_gapminder_files/figure-html/plot1-1.png)
 
 ### Other helpful links!
 - [Here](http://stat545.com/)'s the link to the main stat 545 page
