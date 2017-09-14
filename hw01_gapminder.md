@@ -3,7 +3,7 @@ Gapminder!
 Kaitlyn Harper
 September 14, 2017
 
-Hello! We're going to load and explore a few things on the Gapminder dataset today. First, let's load the dataset from Rstudio. (Note: for this markdown, you'll see my code in gold and the output in blue!)
+Hello! We're going to load and explore a few things on the Gapminder dataset today. First, let's load the dataset from Rstudio.
 
 ``` r
 # Load tidyverse + all corresponding packages!
