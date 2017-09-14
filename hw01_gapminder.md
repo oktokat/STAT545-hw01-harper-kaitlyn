@@ -129,7 +129,7 @@ summary(gapminder)
 </div>
 So it seems like we can glean a few things from this summary. This looks like a longitudinal data set from 1952 to 2007, with 12 observations from most countries. 
 
-Okay fineeee, we'll do one plot just for good measure! 
+Okay fineeee, I'll do one little plot just for good measure! 
 <div class = "color">
 
 ```r
@@ -137,7 +137,11 @@ cont_LE = gapminder %>%
   group_by(continent) %>% 
   summarise(avgLifeExp = mean(lifeExp))
   
-barplot(cont_LE$avgLifeExp)
+ggplot(cont_LE, aes(continent, avgLifeExp)) + 
+  geom_bar(stat = "identity", fill = c("plum", "coral2", "dodgerblue", "gold", "chartreuse4")) +
+  xlab("Continent") +
+  ylab("Average Life Expectancy") + 
+  ggtitle("An obnoxiously colorful graph showing the aggregate average life expectancy of \nall people on different continents from 1952-2007")
 ```
 
 ![](hw01_gapminder_files/figure-html/plot1-1.png)<!-- -->

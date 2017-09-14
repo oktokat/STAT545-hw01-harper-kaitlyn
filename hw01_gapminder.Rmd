@@ -11,7 +11,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Hello! We're going to explore the Gapminder dataset today! First, we need to load the dataset from Rstudio. Note: for this markdown, you'll see my code in gold and the output in blue! 
+Hello! We're going to load and explore a few things on the Gapminder dataset today. First, let's load the dataset from Rstudio. (Note: for this markdown, you'll see my code in gold and the output in blue!)
 
 <style>
 div.color pre { background-color:lightskyblue; }
@@ -67,7 +67,7 @@ summary(gapminder)
 </div>
 So it seems like we can glean a few things from this summary. This looks like a longitudinal data set from `r min(gapminder$year)` to `r max(gapminder$year)`, with `r length(which(gapminder$country == "Afghanistan"))` observations from most countries. 
 
-Okay fineeee, we'll do one plot just for good measure! 
+Okay fineeee, we can do _one little plot_ just for kicks! 
 <div class = "color">
 ```{r plot1, echo=TRUE}
 
@@ -75,7 +75,11 @@ cont_LE = gapminder %>%
   group_by(continent) %>% 
   summarise(avgLifeExp = mean(lifeExp))
   
-plot(cont_LE, barplot(cont_LE$avgLifeExp))
+ggplot(cont_LE, aes(continent, avgLifeExp)) + 
+  geom_bar(stat = "identity", fill = c("plum", "coral2", "dodgerblue", "gold", "chartreuse4")) +
+  xlab("Continent") +
+  ylab("Average Life Expectancy") + 
+  ggtitle("An obnoxiously colorful graph showing the aggregate average life expectancy of \nall people on different continents from 1952-2007")
 
 ```
 </div>
