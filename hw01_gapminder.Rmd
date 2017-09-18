@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 Hello! We're going to load and explore a few things on the Gapminder dataset today. First, let's load the dataset from Rstudio.
-```{r View_Load_Gapminder, echo = TRUE, background = "plum"}
+```{r View_Load_Gapminder, echo = TRUE}
 
 # Load tidyverse + all corresponding packages!
 library(tidyverse)
