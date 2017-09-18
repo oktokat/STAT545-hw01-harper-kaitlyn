@@ -1,0 +1,28 @@
+---
+title: 'Homework #2'
+author: "Kaitlyn Harper"
+date: "September 18, 2017"
+output: 
+  github_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Bring rectangular data in
+
+## "Smell test" the data
+
+## Explore individual variables
+
+## Explore various plot types
+
+## Use filter, select, and pipes!
+
+## More, more, more! 
+
+## Reflection
+
+
