@@ -123,7 +123,7 @@ ggplot(iris, aes(Petal.Width)) +
 # make frequency table and make it into a df for better viewing :)
 tab1 = data.frame(table(iris$Petal.Width))
 
-rm(tab1, petal_width)
+rm(tab1, petal_width, iris)
 
 ```
 
@@ -154,7 +154,11 @@ Resources underpinning this section can be found in two parts: [part 1](http://s
 Basic example:
 
 ```{r}
-filter(gapminder, country=="Canada")
+
+data(gapminder)
+
+Canada = filter(gapminder, country=="Canada")
+View(Canada)
 ```
 
 Logical expressions are governed by __relational operators__, that output either `TRUE` or `FALSE` based on the validity of the statement you give it. Here's a summary of the operators:
@@ -178,6 +182,8 @@ c(1, 2, 3) < 3   # vectorized!
 4 %in% c(1, 2, 3, 4, 5)
 my_equality <- 5 == 3
 print(my_equality)
+
+rm(my_equality)
 ```
 
 
@@ -213,13 +219,29 @@ From the Part 1 notes... never do the following!
 
 __Exercises__: Let's try some exercises using the `gapminder` data set. 
 
-1. Find all entries of Canada and Algeria. 
+1. Find all entries of Canada and Algeria.
 
 2. Find all entries of Canada and Algeria, occuring in the '60s. 
 
 3. Find all entries of Canada, and entries of Algeria occuring in the '60s. 
 
 4. Find all entries _not_ including European countries.
+
+```{r Canada_Algeria}
+
+# Canada and Algeria
+filter(gapminder, country == "Canada" | country == "Algeria")
+
+# Canada, Algeria, 1960's
+filter(gapminder, country == "Canada" | country == "Algeria", year == 1960:1969)
+
+# all Canada, Algeria only in 60's
+filter(gapminder, country == "Canada" | (country == "Algeria" & year == 1960:1969))
+
+# not European countries
+filter(gapminder, continent != "Europe")
+
+```
 
 
 #### `select`
