@@ -253,6 +253,8 @@ filter(gapminder, continent != "Europe")
 
 ```{r}
 select(gapminder, continent, country)
+
+select(gapminder, matches("co")) # pulls out any column with "co" in the name 
 ```
 
 - Always returns a tibble. 
@@ -334,6 +336,15 @@ __Exercises__:
 1. Order the data frame by year, then descending by life expectancy.
 
 2. In addition to the above exercise, rearrange the variables so that `year` comes first, followed by life expectancy. (Hint: check the documentation for the `select` function for a related handy function).
+
+```{r arrange}
+
+gapminder %>% 
+  arrange(year, desc(lifeExp)) %>%         # order df by year, then descending by life expectancy
+  select(year, lifeExp, everything())      # put year and life exp at the beginning, but keep all variables
+
+```
+
 
 #### `mutate`
 
