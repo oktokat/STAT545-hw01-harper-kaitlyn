@@ -230,13 +230,16 @@ __Exercises__: Let's try some exercises using the `gapminder` data set.
 ```{r Canada_Algeria}
 
 # Canada and Algeria
-filter(gapminder, country == "Canada" | country == "Algeria")
+filter(gapminder, country == "Canada" | country == "Algeria") # first way
+filter(gapminder, country %in% c("Canada", "Algeria")) # second way
 
 # Canada, Algeria, 1960's
-filter(gapminder, country == "Canada" | country == "Algeria", year == 1960:1969)
+filter(gapminder, country == "Canada" | country == "Algeria", year == 1960:1969) # my way
+filter(gapminder, country %in% c("Canada", "Algeria"), year > 1960 & year < 1969) # BETTER way
 
 # all Canada, Algeria only in 60's
-filter(gapminder, country == "Canada" | (country == "Algeria" & year == 1960:1969))
+filter(gapminder, country == "Canada" | (country == "Algeria" & year == 1960:1969)) # my way
+filter(gapminder, country == "Canada" | (country == "Algeria" & year %in% c(1960:1969))) # BETTER way
 
 # not European countries
 filter(gapminder, continent != "Europe")
@@ -306,6 +309,14 @@ You can read this as:
 3. select the `country`, `year`, and `gdpPercap` columns. 
 
 __Exercise__: Take all countries in Europe that have a GPD per capita greater than 10000, and select all variables except `gdpPercap`. (Hint: use `-`).
+
+```{r piping}
+
+filter(gapminder, gdpPercap > 10000) %>%    #filter all countries with gpd > 10000
+  select(-gdpPercap)                        #take all columns EXCEPT gdp column (see dplyr cheatsheet for more tips!)
+
+```
+
 
 #### `arrange`
 
